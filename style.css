@@ -1,20 +1,39 @@
-.wrapper {
-    width: 1170px;
-    height: 100%;
-    margin: auto 0;
+body {
+    font-family: "roboto", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* ----- Первый экран -----*/
+
 .intro {
-    max-width: 100vh;
     display: flex;
     justify-content: center;
 }
 
-.callback, .calc {
-    display: flex;
+.intro__button {
+    margin-top: 100px;
 }
 
-.text {
+.btn__intro {
+    display: flex;
+    margin: 10px
+}
+
+.icon__intro {
+    margin-right: 20px;
+}
+
+.text_btn_intro {
     background: #fff;
     text-align: center;
     color: #b8da29;
@@ -22,9 +41,18 @@
     border-radius: 30px;
     width: 220px;
     height: 50px;
-    line-height: 42px;
+    line-height: 50px;
     font-weight: 700;
     font-size: 16px;
-    box-shadow: 3px 3px 3px 0 rgba(26,22,26,.6);
-    transition: all .3s ease-in-out;
+    box-shadow: 3px 3px 3px 0 rgba(26, 22, 26, .6);
+}
+
+.head {
+    font-size: 2em;
+    color: #6c6c6c;
+}
+
+.text {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .6);
 }
