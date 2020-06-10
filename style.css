@@ -90,6 +90,10 @@ a {
     justify-content: space-between;
 }
 
+.stroller-factory__content {
+    display: flex;
+}
+
 .stroller-factory__content__list>li {
     list-style: url('img/right_arrow_icon.png');
     padding-left: 10px;
