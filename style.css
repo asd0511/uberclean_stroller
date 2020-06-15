@@ -111,18 +111,59 @@ a {
     letter-spacing: 0.3px;
 }
 
-.sdach-picure {
+.stroller-delivery_picure {
     display: flex;
     justify-content: center;
 }
 
-
 .thanks-mom {
     text-align: center;
 }
-.polsa_bckg {
-    height: 500px;
-    width: 100%;
-    background: url(img/thanks-mom.jpg) no-repeat cover;
-    background-size: 100%;
+
+.benefits-cleaning_bckg {
+    margin-top: 40px;
+    min-height: 400px;
+    background-image: url(img/thanks-mom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+.our-slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.prise-stroller_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.price-stroller_item {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.price-stroller_name {
+    width: 300px;
+    padding: 20px 40px;
+    background-color: #c4d403;
+    border-radius: 20px;
+    margin-right: -50px;
+}
+
+.price-stroller_cost {
+    width: 150px;
+    padding: 20px 5px;
+    background-color: #96a639;
+    border-radius: 40px;
+    text-align: center;
+}
+
