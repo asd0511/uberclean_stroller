@@ -94,9 +94,14 @@ a {
     display: flex;
 }
 
-.stroller-factory__content__list>li {
+.stroller-factory__content__picture {
+    padding: 0 10px 0 50px;
+}
+
+.list {
     list-style: url('img/right_arrow_icon.png');
     padding-left: 10px;
+    margin: 25px 0;
     box-sizing: border-box;
     text-align: justify;
     margin-bottom: 20px;
@@ -104,4 +109,20 @@ a {
     color: rgba(0, 0, 0, .6);
     line-height: 22px;
     letter-spacing: 0.3px;
+}
+
+.sdach-picure {
+    display: flex;
+    justify-content: center;
+}
+
+
+.thanks-mom {
+    text-align: center;
+}
+.polsa_bckg {
+    height: 500px;
+    width: 100%;
+    background: url(img/thanks-mom.jpg) no-repeat cover;
+    background-size: 100%;
 }
