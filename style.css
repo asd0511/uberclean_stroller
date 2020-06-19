@@ -59,6 +59,11 @@ a {
     box-shadow: 3px 3px 3px 0 rgba(26, 22, 26, .6);
 }
 
+
+/* Mobile*/
+
+@media screen and (max-width: 420px) {}
+
 .head {
     font-size: 2em;
     color: #6c6c6c;
@@ -85,8 +90,8 @@ a {
 }
 
 .video-work {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
 
@@ -152,18 +157,171 @@ a {
 }
 
 .price-stroller_name {
-    width: 300px;
+    max-width: 300px;
+    min-width: 250px;
     padding: 20px 40px;
     background-color: #c4d403;
     border-radius: 20px;
     margin-right: -50px;
 }
 
+.price-stroller_name:hover {
+    box-shadow: 0 0 5px 0 rgba(1, 1, 1, 1);
+}
+
 .price-stroller_cost {
-    width: 150px;
+    max-width: 150px;
+    min-width: 60px;
     padding: 20px 5px;
     background-color: #96a639;
     border-radius: 40px;
     text-align: center;
 }
 
+.price-stroller_cost:hover {
+    box-shadow: 0 0 5px 0 rgba(1, 1, 1, 1);
+}
+
+
+/* Адаптив 479px*/
+
+@media screen and (max-width: 479px) {
+    .side {
+        padding: 0 2.5%;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .intro {
+        margin: 0;
+    }
+    .content_intro {
+        flex-flow: wrap;
+    }
+    .intro__button {
+        display: none;
+        ;
+    }
+    .btn__intro {
+        justify-content: center;
+        margin: 5px;
+    }
+    .gallery_than_do,
+    .callback_section,
+    .video-work,
+    .stroller-factory__content,
+    .stroller-delivery_picure,
+    .our-slider {
+        flex-flow: wrap;
+    }
+    .icon__intro {
+        width: 30%;
+    }
+    .stroller-factory__content__picture {
+        padding: 0;
+        width: 100%;
+    }
+    .plasma,
+    .major_pic {
+        width: 100%;
+        border: none;
+    }
+    .prise-stroller_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .price-stroller_item {
+        align-self: center;
+    }
+    .price-stroller_name {
+        max-width: 350px;
+        min-width: 250px;
+        padding: 20px 10px;
+        border-radius: 20px;
+        margin-right: -60px;
+    }
+    .price-stroller_cost {
+        max-width: 150px;
+        min-width: 70px;
+        padding: 20px 5px;
+        border-radius: 20px;
+    }
+    .text {
+        font-size: 16px;
+        color: rgba(0, 0, 0, .6);
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+    .list {
+        padding-left: 0px;
+        text-align: left;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .6);
+        line-height: 22px;
+        letter-spacing: 0.3px;
+    }
+    .our-slider {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .side {
+        padding: 0 3%;
+    }
+    .intro__button {
+        display: none;
+    }
+    .gallery_than_do,
+    .callback_section,
+    .stroller-factory__content,
+    .stroller-delivery_picure,
+    .our-slider {
+        flex-flow: wrap;
+    }
+    .icon__intro {
+        width: 30%;
+    }
+    .video-work {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .stroller-factory__content__picture {
+        padding: 0;
+        width: 100%;
+    }
+    .prise-stroller_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .price-stroller_name {
+        max-width: 350px;
+        min-width: 250px;
+        padding: 20px 10px;
+        border-radius: 20px;
+        margin-right: -60px;
+    }
+    .price-stroller_cost {
+        max-width: 150px;
+        min-width: 70px;
+        padding: 20px 5px;
+        border-radius: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .list {
+        padding-left: 0px;
+        text-align: left;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .6);
+        line-height: 22px;
+        letter-spacing: 0.3px;
+    }
+    .our-slider {
+        justify-content: space-between;
+    }
+}
